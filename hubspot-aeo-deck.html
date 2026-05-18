@@ -800,61 +800,61 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 
 <!-- ══ 05 BUILD ORDER ════════════════════════════ -->
 <div class="slide" id="s5">
- <div class="slide-inner" style="padding:32px 48px;">
-  <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;font-family:Inter,sans-serif;" aria-label="Sphere of Influence diagram">
-    <!-- Title -->
-    <text x="40" y="50" font-size="26" font-weight="700" fill="#0d0d0d">Your job is to expand your sphere of influence</text>
+ <div class="slide-inner" style="padding:44px 64px 32px;flex-direction:row;gap:0;">
+  <!-- LEFT: heading + zone labels -->
+  <div style="display:flex;flex-direction:column;justify-content:center;width:310px;flex-shrink:0;padding-right:32px;">
+   <h2 style="font-size:28px;font-weight:700;color:#0d0d0d;line-height:1.2;margin-bottom:32px;">Your job is to expand your sphere of influence</h2>
+   <div style="display:flex;flex-direction:column;gap:20px;">
+    <div>
+     <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#999;letter-spacing:.08em;margin-bottom:2px;">REPUTATION</div>
+     <div style="font-size:20px;font-weight:700;color:#0d0d0d;">Earn</div>
+    </div>
+    <div>
+     <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#999;letter-spacing:.08em;margin-bottom:2px;">DISTRIBUTION</div>
+     <div style="font-size:20px;font-weight:700;color:#0d0d0d;">Influence</div>
+    </div>
+    <div>
+     <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#999;letter-spacing:.08em;margin-bottom:2px;">VISIBILITY + ALIGNMENT</div>
+     <div style="font-size:20px;font-weight:700;color:#0d0d0d;">Control</div>
+    </div>
+   </div>
+  </div>
+  <!-- RIGHT: sphere SVG -->
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;overflow:visible;">
+   <svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-height:580px;" aria-label="Sphere of Influence diagram">
+    <!-- Earn ring (outermost) — r=260, dashed -->
+    <circle cx="280" cy="280" r="260" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="5 6" opacity="0.25"/>
+    <!-- Influence ring — r=185 -->
+    <circle cx="280" cy="280" r="185" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+    <!-- Control ring — r=112 -->
+    <circle cx="280" cy="280" r="112" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <!-- Center — r=66 -->
+    <circle cx="280" cy="280" r="66" fill="#22c55e"/>
+    <text x="280" y="276" font-size="14" font-weight="700" fill="white" text-anchor="middle" font-family="Inter,sans-serif">Website</text>
+    <text x="280" y="295" font-size="11" fill="white" text-anchor="middle" font-family="Inter,sans-serif" opacity="0.85">[Pages]</text>
     <!-- Subtitle -->
-    <text x="600" y="96" font-size="11" fill="#999" text-anchor="middle" font-family="'JetBrains Mono',monospace" letter-spacing="0.05em">Start at the center, where we focus</text>
-    <!-- Earn ring (outermost) — r=270, dashed -->
-    <circle cx="600" cy="300" r="270" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="5 6" opacity="0.2"/>
-    <!-- Influence ring — r=190 -->
-    <circle cx="600" cy="300" r="190" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
-    <!-- Control ring fill + stroke — r=115 -->
-    <circle cx="600" cy="300" r="115" fill="#f0fdf4" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
-    <!-- Center circle — r=68 -->
-    <circle cx="600" cy="300" r="68" fill="#22c55e"/>
-    <text x="600" y="295" font-size="14" font-weight="700" fill="white" text-anchor="middle">Website</text>
-    <text x="600" y="315" font-size="11" fill="white" text-anchor="middle" opacity="0.85">[Pages]</text>
-    <!-- Control zone items (r≈91) -->
-    <text x="512" y="380" font-size="9.5" fill="#444" text-anchor="middle">Stackoverflow</text>
-    <text x="510" y="346" font-size="9.5" fill="#444" text-anchor="middle">Github</text>
-    <!-- Influence zone items (r≈152) -->
-    <text x="443" y="256" font-size="9.5" fill="#444" text-anchor="middle">Reddit</text>
-    <text x="474" y="210" font-size="9.5" fill="#444" text-anchor="middle">Linkedin</text>
-    <text x="522" y="172" font-size="9.5" fill="#444" text-anchor="middle">X</text>
-    <text x="672" y="168" font-size="9.5" fill="#444" text-anchor="middle">YouTube</text>
-    <text x="734" y="218" font-size="9.5" fill="#444" text-anchor="middle">G2</text>
-    <text x="754" y="316" font-size="9.5" fill="#444" text-anchor="middle">Wikipedia</text>
-    <text x="734" y="388" font-size="9.5" fill="#444" text-anchor="middle">Crunchbase</text>
-    <text x="688" y="440" font-size="9.5" fill="#444" text-anchor="middle">Glassdoor</text>
-    <text x="805" y="278" font-size="9.5" fill="#444" text-anchor="middle">Community</text>
-    <!-- Earn zone items (r≈230) -->
-    <text x="390" y="196" font-size="9.5" fill="#444" text-anchor="middle">Media</text>
-    <text x="362" y="268" font-size="9.5" fill="#444" text-anchor="middle">Podcasts</text>
-    <text x="373" y="348" font-size="9.5" fill="#444" text-anchor="middle">News</text>
-    <text x="622" y="84" font-size="9.5" fill="#444" text-anchor="middle">Analysts</text>
-    <text x="800" y="148" font-size="9.5" fill="#444" text-anchor="middle">Influencers</text>
-    <!-- Left annotation labels with connecting lines -->
-    <!-- Reputation / Earn — line endpoint on Earn ring left edge at y=230 -->
-    <!-- Earn ring left at y=230: x=600-sqrt(270²-(230-300)²)=600-sqrt(72900-4900)=600-sqrt(68000)=600-260.8=339 -->
-    <text x="42" y="216" font-size="10" fill="#999">Reputation</text>
-    <text x="42" y="238" font-size="17" font-weight="700" fill="#0d0d0d">Earn</text>
-    <line x1="100" y1="233" x2="339" y2="233" stroke="#0d0d0d" stroke-width="1"/>
-    <circle cx="339" cy="233" r="2.5" fill="#0d0d0d"/>
-    <!-- Distribution / Influence — line endpoint on Influence ring left at y=300 -->
-    <!-- Influence left at y=300: x=600-190=410 -->
-    <text x="42" y="290" font-size="10" fill="#999">Distribution</text>
-    <text x="42" y="312" font-size="19" font-weight="700" fill="#0d0d0d">Influence</text>
-    <line x1="155" y1="307" x2="410" y2="307" stroke="#0d0d0d" stroke-width="1"/>
-    <circle cx="410" cy="307" r="2.5" fill="#0d0d0d"/>
-    <!-- Visibility + Alignment / Control — line endpoint on Control ring left at y=370 -->
-    <!-- Control ring left at y=370: x=600-sqrt(115²-(370-300)²)=600-sqrt(13225-4900)=600-sqrt(8325)=600-91.2=508.8 -->
-    <text x="42" y="362" font-size="10" fill="#999">Visibility + Alignment</text>
-    <text x="42" y="384" font-size="17" font-weight="700" fill="#0d0d0d">Control</text>
-    <line x1="128" y1="379" x2="487" y2="379" stroke="#0d0d0d" stroke-width="1"/>
-    <circle cx="487" cy="379" r="2.5" fill="#0d0d0d"/>
-  </svg>
+    <text x="280" y="48" font-size="10" fill="#999" text-anchor="middle" font-family="'JetBrains Mono',monospace" letter-spacing="0.05em">Start at the center, where we focus</text>
+    <!-- Control zone items -->
+    <text x="210" y="362" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Stackoverflow</text>
+    <text x="208" y="328" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Github</text>
+    <!-- Influence zone items -->
+    <text x="140" y="236" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Reddit</text>
+    <text x="168" y="192" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">LinkedIn</text>
+    <text x="218" y="158" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">X</text>
+    <text x="352" y="152" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">YouTube</text>
+    <text x="420" y="198" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">G2</text>
+    <text x="445" y="290" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Wikipedia</text>
+    <text x="420" y="368" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Crunchbase</text>
+    <text x="375" y="428" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Glassdoor</text>
+    <text x="490" y="256" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Community</text>
+    <!-- Earn zone items -->
+    <text x="82" y="176" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Media</text>
+    <text x="52" y="252" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Podcasts</text>
+    <text x="62" y="334" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">News</text>
+    <text x="308" y="20" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Analysts</text>
+    <text x="494" y="112" font-size="10" fill="#555" text-anchor="middle" font-family="Inter,sans-serif">Influencers</text>
+   </svg>
+  </div>
  </div>
  <div class="slide-footer"><span></span><span class="slide-num">10 / 29</span></div>
 </div>
