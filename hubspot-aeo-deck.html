@@ -100,7 +100,8 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 #s4 .frame-head { margin-bottom:24px; }
 #s4 .frame-head h2 { font-size:clamp(20px,2.6vw,32px); font-weight:400; color:var(--text); line-height:1.3; max-width:660px; margin-bottom:6px; }
 #s4 .frame-head p { font-size:14px; color:var(--muted); }
-#s4 .surfaces-grid { flex:1; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; align-content:center; }
+#s4 .surfaces-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; width:100%; }
+#s4 .slide-inner { justify-content:center; gap:24px; }
 #s4 .sc { background:var(--bg-off); border:1px solid var(--border); border-top:3px solid var(--border); border-radius:3px; padding:26px 22px; display:flex; flex-direction:column; gap:12px; }
 #s4 .sc.primary { background:#f0fdf4; border-color:#bbf7d0; border-top-color:var(--accent); }
 #s4 .sc-num { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--faint); letter-spacing:.12em; }
@@ -117,7 +118,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 #s5 .bo-header { margin-top:16px; margin-bottom:24px; }
 #s5 .bo-header h2 { font-size:clamp(20px,2.6vw,32px); font-weight:300; color:#0d0d0d; margin-bottom:6px; }
 #s5 .bo-header p { font-size:14px; color:#555; }
-#s5 .bo-grid { flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-content:center; }
+#s5 .bo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; width:100%; }
 #s5 .bo-col { display:flex; flex-direction:column; gap:10px; }
 #s5 .bo-phase { font-family:'JetBrains Mono',monospace; font-size:11px; color:#888; letter-spacing:.12em; text-transform:uppercase; margin-bottom:2px; }
 #s5 .bo-card { border-radius:2px; padding:20px 18px; display:flex; flex-direction:column; gap:10px; }
@@ -262,7 +263,8 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 #s16 .ta-head { margin-bottom:22px; }
 #s16 .ta-head h2 { font-size:clamp(24px,2.8vw,36px); font-weight:600; color:var(--text); margin-bottom:4px; }
 #s16 .ta-head p { font-size:14px; color:var(--muted); }
-#s16 .ta-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:18px; align-content:center; }
+#s16 .ta-body { display:grid; grid-template-columns:1fr 1fr; gap:18px; width:100%; }
+#s16 .slide-inner { justify-content:center; gap:20px; }
 #s16 .ta-part { background:var(--bg-off); border:1px solid var(--border); border-radius:3px; padding:26px 24px; display:flex; flex-direction:column; gap:10px; }
 #s16 .ta-part.hi { border-left:3px solid var(--accent); }
 #s16 .ta-label { font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); }
@@ -288,7 +290,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 .ca-text { font-size:14px; color:#555; line-height:1.5; }
 
 /* ── GOOGLE GUIDE SLIDES (sg1 dark, sg2 light) ─── */
-.gg-cards { flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; align-content:center; }
+.gg-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; width:100%; }
 .gg-card { background:#f5f5f5; border:1px solid #e5e5e3; border-radius:3px; padding:22px 20px; display:flex; flex-direction:column; gap:10px; }
 .gg-card.gg-accent { border-left:3px solid var(--accent); }
 .gg-card-num { font-family:'JetBrains Mono',monospace; font-size:11px; color:#666; letter-spacing:.14em; }
@@ -321,7 +323,8 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 
 /* ── SLIDE 19: SURVEY ──────────────────────────── */
 #s19 .slide-inner { justify-content:space-between; }
-#s19 .sv-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:32px; align-content:center; }
+#s19 .sv-body { display:grid; grid-template-columns:1fr 1fr; gap:32px; width:100%; }
+#s19 .slide-inner { justify-content:center; }
 #s19 .sv-left { display:flex; flex-direction:column; justify-content:center; gap:20px; }
 #s19 .sv-kicker { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--accent); letter-spacing:.18em; text-transform:uppercase; }
 #s19 .sv-title { font-size:clamp(22px,2.8vw,36px); font-weight:600; color:var(--text); line-height:1.2; }
@@ -511,7 +514,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 <div class="slide" id="s_layer">
  <div class="slide-inner">
   <h2 style="font-size:clamp(18px,2.2vw,28px);font-weight:500;color:#0d0d0d;line-height:1.3;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e5e5e3;flex-shrink:0;">There's a new layer between you and buyers (AI Engines)</h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;flex:1;align-items:center;overflow:hidden;min-width:0;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;width:100%;align-items:start;overflow:hidden;min-width:0;">
    <!-- LEFT: stats box -->
    <div>
     <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">AI Engines + Agents</div>
@@ -1387,7 +1390,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 <div class="slide" id="s_sbs">
  <div class="slide-inner">
   <h2 style="font-size:clamp(32px,4.5vw,60px);font-weight:700;color:#0d0d0d;letter-spacing:-.03em;margin-bottom:32px;flex-shrink:0;">Step by step</h2>
-  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;min-width:0;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;width:100%;align-items:start;min-width:0;">
    <!-- LEFT -->
    <div>
     <h4 style="font-size:16px;font-weight:700;color:#0d0d0d;margin-bottom:20px;">Audit and establish baseline</h4>
