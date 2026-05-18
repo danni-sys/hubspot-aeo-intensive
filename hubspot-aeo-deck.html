@@ -173,7 +173,8 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 .surface-slide .ss-right { display:flex; flex-direction:column; gap:12px; justify-content:center; }
 
 /* stat boxes */
-.stat-hero { background:var(--accent); border-radius:3px; padding:16px 20px; display:flex; flex-direction:column; justify-content:space-between; flex:1; }
+.stat-hero { background:var(--accent); border-radius:3px; padding:16px 20px; display:flex; flex-direction:column; justify-content:space-between; }
+.surface-slide .ss-right .stat-hero { flex:0 0 auto; }
 .stat-hero .stat-num { font-size:clamp(36px,4.5vw,56px); font-weight:700; line-height:1; letter-spacing:-.03em; color:#fff; }
 .stat-hero .stat-desc { font-size:14px; color:#fff; line-height:1.5; margin-top:6px; }
 .stat-hero .stat-src { font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(255,255,255,.6); margin-top:10px; }
