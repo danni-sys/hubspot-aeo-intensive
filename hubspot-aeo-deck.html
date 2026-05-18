@@ -19,6 +19,7 @@
  --accent: #22c55e;
  --border: #E5E5E3;
 }
+*, *::before, *::after { box-sizing:border-box; }
 html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-serif; background:var(--bg-dark); }
 
 /* ── LOGO ──────────────────────────────────────── */
@@ -33,7 +34,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 .logo-date { font-family:'JetBrains Mono',monospace; font-size:10px; color:#444; letter-spacing:.05em; }
 
 /* ── SLIDE ENGINE ──────────────────────────────── */
-.deck { width:100vw; height:100vh; position:relative; }
+.deck { width:100%; height:100vh; position:relative; }
 .slide {
  position:absolute; inset:0; width:100%; height:100%;
  display:flex; flex-direction:column;
