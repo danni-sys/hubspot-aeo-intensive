@@ -34,9 +34,10 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
 .logo-date { font-family:'JetBrains Mono',monospace; font-size:10px; color:#444; letter-spacing:.05em; }
 
 /* ── SLIDE ENGINE ──────────────────────────────── */
-.deck { width:100%; height:100vh; position:relative; }
+.deck-wrap { width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.deck { width:1280px; height:720px; position:relative; flex-shrink:0; }
 .slide {
- position:absolute; inset:0; width:100%; height:100%;
+ position:absolute; inset:0; width:1280px; height:720px;
  display:flex; flex-direction:column;
  opacity:0; pointer-events:none;
  transition:opacity 0.28s ease;
@@ -1560,7 +1561,7 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
  <div class="slide-footer"><span></span><span class="slide-num">29 / 29</span></div>
 </div>
 
-</div><!-- /deck -->
+</div></div><!-- /deck /deck-wrap -->
 
 <div class="nav">
  <button id="prev" onclick="go(-1)" disabled>← Prev</button>
@@ -1579,7 +1580,20 @@ html, body { width:100%; height:100%; overflow:hidden; font-family:'Inter',sans-
  document.getElementById('prev').disabled = cur === 0;
  document.getElementById('next').disabled = cur === slides.length - 1;
  }
- document.addEventListener('keydown', e => {
+ // Scale deck to fit viewport
+function scaleDeck() {
+  const wrap = document.querySelector('.deck-wrap');
+  const deck = document.querySelector('.deck');
+  const scaleX = wrap.clientWidth / 1280;
+  const scaleY = wrap.clientHeight / 720;
+  const scale = Math.min(scaleX, scaleY);
+  deck.style.transform = 'scale(' + scale + ')';
+  deck.style.transformOrigin = 'center center';
+}
+scaleDeck();
+window.addEventListener('resize', scaleDeck);
+
+document.addEventListener('keydown', e => {
  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') go(1);
  if (e.key==='ArrowLeft' ||e.key==='ArrowUp') go(-1);
  });
